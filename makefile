@@ -5,10 +5,10 @@ else
 endif
 
 all: main.o
-	gcc -o program main.o
+	$(CC) -o program main.o
 
-main.o: main.c stat.h
-	gcc -c main.c
+main.o: main.c
+	$(CC) -c main.c
 
 run:
 	./program
