@@ -16,12 +16,7 @@ int main() {
     char string[100];
     float size2;
     int size = info.st_size;
-    if (size > 1024) {
-        float size2 = size / 1024.0;
-        sprintf(string, "%.2f Kilobytes", size2);
-    } else {
-        sprintf(string, "%d bytes", size);
-    }
+    sprintf(string, "%d bytes", size);
     printf("File Size: %s\n", string);
 
     printf("File permissions: -");
