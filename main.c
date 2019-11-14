@@ -14,7 +14,6 @@ int main() {
 
     printf("Now doing things in Readable Form:\n");
     char string[100];
-    float size2;
     int size = info.st_size;
     sprintf(string, "%d bytes", size);
     printf("File Size: %s\n", string);
